@@ -152,11 +152,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 		path := "C:\Users\Admin\Desktop\Life\" 
 		NavigateTo(path, True)
 		Return
-	^+b Up::  ;triggers bookshelf
+	^+a Up::  ;triggers bookshelf
 		KeyWait, Ctrl
 		KeyWait, Shift
 		KeyWait, i
-		path := "C:\Users\Admin\Desktop\Bookshelf\" 
+		path := "C:\Users\Admin\Desktop\Artwork Room\" 
 		NavigateTo(path, True)
 		Return
 	^+o Up::  ;trigger precious moments
