@@ -170,13 +170,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 		Send, %strDateFolder%
 		Send, _
 		Return
-	^+t::  ;triggers utp life
-		KeyWait, Ctrl
-		KeyWait, Shift
-		KeyWait, t
-		path := "C:\Users\Admin\Desktop\utp degree\Utp Life\" 
-		NavigateTo(path, True)
-		Return
+	; ^+t::  ;triggers utp life
+	; 	KeyWait, Ctrl
+	; 	KeyWait, Shift
+	; 	KeyWait, t
+	; 	path := "C:\Users\Admin\Desktop\utp degree\Utp Life\" 
+	; 	NavigateTo(path, True)
+	; 	Return
 
 #IfWinActive ahk_class Microsoft-Windows-SnipperEditor
 	Enter Up:: ;closes snipper editor (it closes the editor after saved in save dialog by mistake)
